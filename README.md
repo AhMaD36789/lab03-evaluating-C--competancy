@@ -1,6 +1,6 @@
 # lab03-evaluating-C#-competancy
 
-##Summary
+## Summary
 
 This is a program that finds the max value within an integer array
 
