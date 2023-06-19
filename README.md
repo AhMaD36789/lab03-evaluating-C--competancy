@@ -1,13 +1,17 @@
-# lab03-evaluating-C#-competancy
-
-## Summary
+# Max Value from an array
 
 This is a program that finds the max value within an integer array
 
 ## Preview
 
-![]()
+![pre](./Screenshot 2023-06-19 202516.png)
 
-## currently the function only tests one fixed array and displays output
+## approach and efficiency
 
-## this readme was added to submit the whiteboard process only
+time complexity O(n)
+
+space complexity O(1)
+
+## Solution
+
+![sol](./Screenshot 2023-06-19 203720.png)
