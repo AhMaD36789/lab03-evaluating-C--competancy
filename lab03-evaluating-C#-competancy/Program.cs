@@ -10,22 +10,21 @@ namespace lab03_evaluating_C__competancy
             try
             {
 
-                //Console.WriteLine(ThreeNumProduct());
-                //Console.WriteLine(CalculateAvg());
-                //Drawing();
-                //Console.WriteLine(MostFrequentNumber(new int[] { 4, 2, 2, 4, 3, 4, 2, 1, 3 }));
-                //Console.WriteLine(MaxValue(new int[] { 5, 25, 99, 123, 78, 96, 555, 108, 4 }));
-                //Console.Write("enter a word to add to words.txt : ");
-                //WriteToFile(Console.ReadLine());
-                //ReadFromFile();
-                //Console.Write("enter a word to delete from words.txt : ");
-                //DeleteFromFile(Console.ReadLine());
+                Console.WriteLine(ThreeNumProduct());
+                Console.WriteLine(CalculateAvg());
+                Drawing();
+                Console.WriteLine(MostFrequentNumber(new int[] { 4, 2, 2, 4, 3, 4, 2, 1, 3 }));
+                Console.WriteLine(MaxValue(new int[] { 5, 25, 99, 123, 78, 96, 555, 108, 4 }));
+                Console.Write("enter a word to add to words.txt : ");
+                WriteToFile(Console.ReadLine());
+                ReadFromFile();
+                Console.Write("enter a word to delete from words.txt : ");
+                DeleteFromFile(Console.ReadLine());
                 string[] arr = WordLengthArray();
                 for (int i = 0; i < arr.Length; i++)
                 {
                     Console.Write(arr[i]);
                 }
-
             }
             catch (FormatException ex)
             {
@@ -133,6 +132,10 @@ namespace lab03_evaluating_C__competancy
 
         public static int MaxValue(int[] arr)
         {
+            if (arr.Length == 0 || arr == null)
+            {
+                return 0;
+            }
             int max = arr[0];
             for (int i = 1; i < arr.Length; i++)
             {
